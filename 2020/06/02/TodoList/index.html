@@ -6,14 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Archives: 2020 | Hexo</title>
+  <title>TodoList | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://yoursite.com/archives/2020/index.html">
+  <meta name="description" content="TodoLis基本功 前提条件 安装了 node 全局安装 Vue 脚手架(VueCLI)  11  npm install -g @vue&#x2F;cli 创建项目11  vue create todolist 启动服务11  npm run serve Vue 文件 父组件（App.vue）12345678910111213141516171819202122232425262728293031323">
+<meta property="og:type" content="article">
+<meta property="og:title" content="TodoList">
+<meta property="og:url" content="http://yoursite.com/2020/06/02/TodoList/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="TodoLis基本功 前提条件 安装了 node 全局安装 Vue 脚手架(VueCLI)  11  npm install -g @vue&#x2F;cli 创建项目11  vue create todolist 启动服务11  npm run serve Vue 文件 父组件（App.vue）12345678910111213141516171819202122232425262728293031323">
 <meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2020-06-02T12:48:47.000Z">
+<meta property="article:modified_time" content="2020-06-02T12:49:44.114Z">
 <meta property="article:author" content="Tzone&#96;s blog">
+<meta property="article:tag" content="TodoList">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
@@ -150,36 +155,68 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-TodoList" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2020" class="archive-year">2020</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/06/02/TodoList/" class="archive-article-date">
-  	<time datetime="2020-06-02T12:48:47.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-06-02</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/06/02/TodoList/">TodoList</a>
+    <h1 class="article-title" itemprop="name">
+      TodoList
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
+        
+        <a href="/2020/06/02/TodoList/" class="archive-article-date">
+  	<time datetime="2020-06-02T12:48:47.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-06-02</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="TodoLis"><a href="#TodoLis" class="headerlink" title="TodoLis"></a>TodoLis</h1><h2 id="基本功"><a href="#基本功" class="headerlink" title="基本功"></a>基本功</h2><ul>
+<li>前提条件 安装了 node</li>
+<li>全局安装 Vue 脚手架(VueCLI)  <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">1</span>  npm install -g @vue/cli</span><br></pre></td></tr></table></figure></li>
+<li>创建项目<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">1</span>  vue create todolist</span><br></pre></td></tr></table></figure></li>
+<li>启动服务<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">1</span>  npm run serve</span><br></pre></td></tr></table></figure>
+<h2 id="Vue-文件"><a href="#Vue-文件" class="headerlink" title="Vue 文件"></a>Vue 文件</h2></li>
+<li>父组件（App.vue）<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br></pre></td><td class="code"><pre><span class="line">&lt;template&gt;</span><br><span class="line">  &lt;div <span class="class"><span class="keyword">class</span></span>=<span class="string">"todo-container"</span>&gt;</span><br><span class="line">    &lt;div <span class="class"><span class="keyword">class</span></span>=<span class="string">"todo-wrap"</span>&gt;</span><br><span class="line">      &lt;!-- <span class="xml"><span class="tag">&lt;<span class="name">Header</span> @<span class="attr">addTodo</span>=<span class="string">"addTodo"</span> /&gt;</span></span> --&gt;</span><br><span class="line">      &lt;Header ref=<span class="string">"header"</span> /&gt;</span><br><span class="line">      &lt;List :todos=<span class="string">"todos"</span> :completeTodo=<span class="string">"completeTodo"</span> /&gt;</span><br><span class="line">      &lt;Footer :todos=<span class="string">"todos"</span> :selectAll=<span class="string">"selectAll"</span> :clearAllComplete=<span class="string">"clearAllComplete"</span> /&gt;</span><br><span class="line">    &lt;<span class="regexp">/div&gt;</span></span><br><span class="line"><span class="regexp">  &lt;/</span>div&gt;</span><br><span class="line">&lt;<span class="regexp">/template&gt;</span></span><br><span class="line"><span class="regexp"></span></span><br><span class="line"><span class="regexp">&lt;script&gt;</span></span><br><span class="line"><span class="regexp">import Header from "./</span>components/Header<span class="string">";</span></span><br><span class="line"><span class="string">import Footer from "</span>./components/Footer<span class="string">";</span></span><br><span class="line"><span class="string">import List from "</span>./components/List<span class="string">";</span></span><br><span class="line"><span class="string">export default &#123;</span></span><br><span class="line"><span class="string">  name: "</span>App<span class="string">",</span></span><br><span class="line"><span class="string">  data() &#123;</span></span><br><span class="line"><span class="string">    return &#123;</span></span><br><span class="line"><span class="string">      todos: JSON.parse(localStorage.getItem("</span>todos_key<span class="string">") || "</span>[]<span class="string">")</span></span><br><span class="line"><span class="string">    &#125;;</span></span><br><span class="line"><span class="string">  &#125;,</span></span><br><span class="line"><span class="string">  mounted() &#123;</span></span><br><span class="line"><span class="string">    this.$refs.header.$on("</span>addTodo<span class="string">", this.addTodo);</span></span><br><span class="line"><span class="string">    this.$bus.$on("</span>removeTodo<span class="string">", this.removeTodo);</span></span><br><span class="line"><span class="string">  &#125;,</span></span><br><span class="line"><span class="string">  beforeDestroy() &#123;</span></span><br><span class="line"><span class="string">    // 移除事件监听</span></span><br><span class="line"><span class="string">    this.$bus.$off("</span>removeTodo<span class="string">");</span></span><br><span class="line"><span class="string">    this.$refs.header.$off("</span>addTodo<span class="string">");</span></span><br><span class="line"><span class="string">  &#125;,</span></span><br><span class="line"><span class="string">  methods: &#123;</span></span><br><span class="line"><span class="string">    addTodo(todo) &#123;</span></span><br><span class="line"><span class="string">      this.todos.unshift(todo);</span></span><br><span class="line"><span class="string">    &#125;,</span></span><br><span class="line"><span class="string">    removeTodo(index) &#123;</span></span><br><span class="line"><span class="string">      this.todos.splice(index, 1);</span></span><br><span class="line"><span class="string">    &#125;,</span></span><br><span class="line"><span class="string">    selectAll(check) &#123;</span></span><br><span class="line"><span class="string">      this.todos.forEach(todo =&gt; (todo.complete = check));</span></span><br><span class="line"><span class="string">    &#125;,</span></span><br><span class="line"><span class="string">    clearAllComplete() &#123;</span></span><br><span class="line"><span class="string">      this.todos = this.todos.filter(todo =&gt; !todo.complete);</span></span><br><span class="line"><span class="string">    &#125;,</span></span><br><span class="line"><span class="string">    completeTodo(check, todo) &#123;</span></span><br><span class="line"><span class="string">      todo.complete = check;</span></span><br><span class="line"><span class="string">    &#125;</span></span><br><span class="line"><span class="string">  &#125;,</span></span><br><span class="line"><span class="string">  watch: &#123;</span></span><br><span class="line"><span class="string">    todos: &#123;</span></span><br><span class="line"><span class="string">      deep: true, // 深度监视</span></span><br><span class="line"><span class="string">      handler(val) &#123;</span></span><br><span class="line"><span class="string">        // todos发生改变的监视回调函数</span></span><br><span class="line"><span class="string">        // 保存最新的todos到local</span></span><br><span class="line"><span class="string">        localStorage.setItem("</span>todos_key<span class="string">", JSON.stringify(val));</span></span><br><span class="line"><span class="string">      &#125;</span></span><br><span class="line"><span class="string">    &#125;</span></span><br><span class="line"><span class="string">  &#125;,</span></span><br><span class="line"><span class="string">  components: &#123;</span></span><br><span class="line"><span class="string">    Header,</span></span><br><span class="line"><span class="string">    Footer,</span></span><br><span class="line"><span class="string">    List</span></span><br><span class="line"><span class="string">  &#125;</span></span><br><span class="line"><span class="string">&#125;;</span></span><br><span class="line"><span class="string">&lt;/script&gt;</span></span><br></pre></td></tr></table></figure>
+子组件（Header.vue）<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line">&lt;template&gt;</span><br><span class="line">  &lt;div <span class="class"><span class="keyword">class</span></span>=<span class="string">"todo-header"</span>&gt;</span><br><span class="line">    &lt;input type=<span class="string">"text"</span> placeholder=<span class="string">"请输入你的任务名称，按回车键确认"</span> v-model=<span class="string">"title"</span> @keyup.enter=<span class="string">"add"</span> /&gt;</span><br><span class="line">  &lt;<span class="regexp">/div&gt;</span></span><br><span class="line"><span class="regexp">&lt;/</span>template&gt;</span><br><span class="line"></span><br><span class="line">&lt;script type=<span class="string">'text/ecmascript-6'</span>&gt;</span><br><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> &#123;</span><br><span class="line">  name: <span class="string">"Header"</span>,</span><br><span class="line">  data() &#123;</span><br><span class="line">    <span class="keyword">return</span> &#123;</span><br><span class="line">      title: <span class="string">""</span></span><br><span class="line">    &#125;;</span><br><span class="line">  &#125;,</span><br><span class="line">  methods: &#123;</span><br><span class="line">    add() &#123;</span><br><span class="line">      <span class="comment">// 对输入数据进行检查</span></span><br><span class="line">      <span class="keyword">if</span> (!<span class="keyword">this</span>.title || !<span class="keyword">this</span>.title.trim()) <span class="keyword">return</span>;</span><br><span class="line">      <span class="comment">// 根据输入数据封装一个todo</span></span><br><span class="line">      <span class="keyword">const</span> todo = &#123;</span><br><span class="line">        id: <span class="built_in">Date</span>.now(),</span><br><span class="line">        title: <span class="keyword">this</span>.title,</span><br><span class="line">        complete: <span class="literal">false</span></span><br><span class="line">      &#125;;</span><br><span class="line">      <span class="comment">// 调用addTodo来添加todo</span></span><br><span class="line">      <span class="keyword">this</span>.$emit(<span class="string">"addTodo"</span>, todo);</span><br><span class="line">      <span class="comment">// 清空输入框</span></span><br><span class="line">      <span class="keyword">this</span>.title = <span class="string">""</span>;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;;</span><br><span class="line">&lt;<span class="regexp">/script&gt;</span></span><br></pre></td></tr></table></figure>
+子组件（Footer.vue）<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line">&lt;template&gt;</span><br><span class="line">  &lt;div <span class="class"><span class="keyword">class</span></span>=<span class="string">"todo-footer"</span>&gt;</span><br><span class="line">    &lt;label&gt;</span><br><span class="line">      &lt;input type=<span class="string">"checkbox"</span> v-model=<span class="string">"checkAll"</span> /&gt;</span><br><span class="line">    &lt;<span class="regexp">/label&gt;</span></span><br><span class="line"><span class="regexp">    &lt;span&gt;</span></span><br><span class="line"><span class="regexp">      &lt;span&gt;已完成&#123;&#123;completeSize&#125;&#125;&lt;/</span>span&gt;</span><br><span class="line">      / 全部&#123;&#123;todos.length&#125;&#125;</span><br><span class="line">    &lt;<span class="regexp">/span&gt;</span></span><br><span class="line"><span class="regexp">    &lt;button class="btn btn-danger" v-show="completeSize" @click="clearAllComplete"&gt;清除已完成任务&lt;/</span>button&gt;</span><br><span class="line">  &lt;<span class="regexp">/div&gt;</span></span><br><span class="line"><span class="regexp">&lt;/</span>template&gt;</span><br><span class="line"></span><br><span class="line">&lt;script type=<span class="string">'text/ecmascript-6'</span>&gt;</span><br><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> &#123;</span><br><span class="line">  name: <span class="string">"Footer"</span>,</span><br><span class="line">  props: &#123;</span><br><span class="line">    todos: <span class="built_in">Array</span>,</span><br><span class="line">    selectAll: <span class="built_in">Function</span>,</span><br><span class="line">    clearAllComplete: <span class="built_in">Function</span></span><br><span class="line">  &#125;,</span><br><span class="line">  computed: &#123;</span><br><span class="line">    completeSize() &#123;</span><br><span class="line">      <span class="keyword">return</span> <span class="keyword">this</span>.todos.reduce(<span class="function">(<span class="params">pre, todo</span>) =&gt;</span> pre + (todo.complete ? <span class="number">1</span> : <span class="number">0</span>), <span class="number">0</span>);</span><br><span class="line">    &#125;,</span><br><span class="line">    checkAll: &#123;</span><br><span class="line">      <span class="keyword">get</span>() &#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">this</span>.todos.length === <span class="keyword">this</span>.completeSize;</span><br><span class="line">      &#125;,</span><br><span class="line">      <span class="keyword">set</span>(value) &#123;</span><br><span class="line">        <span class="keyword">this</span>.selectAll(value);</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;;</span><br><span class="line">&lt;<span class="regexp">/script&gt;</span></span><br></pre></td></tr></table></figure>
+子组件（List.vue）<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line">&lt;template&gt;</span><br><span class="line">  &lt;ul <span class="class"><span class="keyword">class</span></span>=<span class="string">"todo-main"</span>&gt;</span><br><span class="line">    &lt;Item</span><br><span class="line">      v-<span class="keyword">for</span>=<span class="string">"(todo,index) in todos"</span></span><br><span class="line">      :key=<span class="string">"todo.id"</span></span><br><span class="line">      :todo=<span class="string">"todo"</span></span><br><span class="line">      :index=<span class="string">"index"</span></span><br><span class="line">      :completeTodo=<span class="string">"completeTodo"</span></span><br><span class="line">    /&gt;</span><br><span class="line">  &lt;<span class="regexp">/ul&gt;</span></span><br><span class="line"><span class="regexp">&lt;/</span>template&gt;</span><br><span class="line"></span><br><span class="line">&lt;script type=<span class="string">'text/ecmascript-6'</span>&gt;</span><br><span class="line"><span class="keyword">import</span> Item <span class="keyword">from</span> <span class="string">"./Item"</span>;</span><br><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> &#123;</span><br><span class="line">  name: <span class="string">"List"</span>,</span><br><span class="line">  props: &#123;</span><br><span class="line">    todos: <span class="built_in">Array</span>,</span><br><span class="line">    completeTodo: <span class="built_in">Function</span></span><br><span class="line">  &#125;,</span><br><span class="line">  components: &#123;</span><br><span class="line">    Item</span><br><span class="line">  &#125;</span><br><span class="line">&#125;;</span><br><span class="line">&lt;<span class="regexp">/script&gt;</span></span><br></pre></td></tr></table></figure>
+子组件（Item.vue）<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br></pre></td><td class="code"><pre><span class="line">&lt;template&gt;</span><br><span class="line">  &lt;li</span><br><span class="line">    :style=<span class="string">"&#123;background: bgColor&#125;"</span></span><br><span class="line">    @mouseenter=<span class="string">"handleEnter(true)"</span></span><br><span class="line">    @mouseleave=<span class="string">"handleEnter(false)"</span></span><br><span class="line">  &gt;</span><br><span class="line">    &lt;label&gt;</span><br><span class="line">      &lt;input type=<span class="string">"checkbox"</span> v-model=<span class="string">"complete"</span> /&gt;</span><br><span class="line">      &lt;span&gt;&#123;&#123;todo.title&#125;&#125;&lt;<span class="regexp">/span&gt;</span></span><br><span class="line"><span class="regexp">    &lt;/</span>label&gt;</span><br><span class="line">    &lt;button <span class="class"><span class="keyword">class</span></span>=<span class="string">"btn btn-danger"</span> v-show=<span class="string">"isShow"</span> @click=<span class="string">"removeItem"</span>&gt;删除&lt;<span class="regexp">/button&gt;</span></span><br><span class="line"><span class="regexp">  &lt;/</span>li&gt;</span><br><span class="line">&lt;<span class="regexp">/template&gt;</span></span><br><span class="line"><span class="regexp"></span></span><br><span class="line"><span class="regexp">&lt;script type='text/</span>ecmascript<span class="number">-6</span><span class="string">'&gt;</span></span><br><span class="line"><span class="string">export default &#123;</span></span><br><span class="line"><span class="string">  name: "Item",</span></span><br><span class="line"><span class="string">  data() &#123;</span></span><br><span class="line"><span class="string">    return &#123;</span></span><br><span class="line"><span class="string">      isShow: false,</span></span><br><span class="line"><span class="string">      bgColor: "#fff"</span></span><br><span class="line"><span class="string">    &#125;;</span></span><br><span class="line"><span class="string">  &#125;,</span></span><br><span class="line"><span class="string">  props: &#123;</span></span><br><span class="line"><span class="string">    todo: Object,</span></span><br><span class="line"><span class="string">    index: Number,</span></span><br><span class="line"><span class="string">    completeTodo: Function</span></span><br><span class="line"><span class="string">  &#125;,</span></span><br><span class="line"><span class="string">  computed: &#123;</span></span><br><span class="line"><span class="string">    complete: &#123;</span></span><br><span class="line"><span class="string">      get() &#123;</span></span><br><span class="line"><span class="string">        return this.todo.complete;</span></span><br><span class="line"><span class="string">      &#125;,</span></span><br><span class="line"><span class="string">      set(value) &#123;</span></span><br><span class="line"><span class="string">        this.completeTodo(value, this.todo);</span></span><br><span class="line"><span class="string">      &#125;</span></span><br><span class="line"><span class="string">    &#125;</span></span><br><span class="line"><span class="string">  &#125;,</span></span><br><span class="line"><span class="string">  methods: &#123;</span></span><br><span class="line"><span class="string">    handleEnter(isEnter) &#123;</span></span><br><span class="line"><span class="string">      if (isEnter) &#123;</span></span><br><span class="line"><span class="string">        this.bgColor = "#aaa";</span></span><br><span class="line"><span class="string">        this.isShow = true;</span></span><br><span class="line"><span class="string">      &#125; else &#123;</span></span><br><span class="line"><span class="string">        this.bgColor = "#fff";</span></span><br><span class="line"><span class="string">        this.isShow = false;</span></span><br><span class="line"><span class="string">      &#125;</span></span><br><span class="line"><span class="string">    &#125;,</span></span><br><span class="line"><span class="string">    removeItem() &#123;</span></span><br><span class="line"><span class="string">      if (confirm("确定删除吗?")) &#123;</span></span><br><span class="line"><span class="string">        this.$bus.$emit("removeTodo", this.index);</span></span><br><span class="line"><span class="string">      &#125;</span></span><br><span class="line"><span class="string">    &#125;</span></span><br><span class="line"><span class="string">  &#125;</span></span><br><span class="line"><span class="string">&#125;;</span></span><br><span class="line"><span class="string">&lt;/script&gt;</span></span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
@@ -191,46 +228,106 @@
 		</ul>
 	</div>
 
-          
+      
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2020/06/02/TodoList/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/06/02/hello-world/" class="archive-article-date">
-  	<time datetime="2020-06-01T23:59:42.400Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-06-02</time>
-</a>
+<nav id="article-nav">
+  
+  
+    <a href="/2020/06/02/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Hello World</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
+        
+        
+    </div>
+</aside>
+
+
+
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/06/02/hello-world/">Hello World</a>
-    </h1>
+  
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
   
 
-    
+  
+
+  
 
 
           </div>
@@ -253,8 +350,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
